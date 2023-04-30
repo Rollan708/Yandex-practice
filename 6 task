@@ -1,0 +1,14 @@
+product_name = input()
+price = int(input())
+weight = int(input())
+money = int(input())
+# Вычисление общей стоимости товара
+total_price = price * weight
+# Вычисление сдачи
+change = money - total_price
+# Вывод чека на экран
+print("Чек")
+print(f"{product_name} - {weight}кг - {price}руб/кг")
+print(f"Итого: {total_price}руб")
+print(f"Внесено: {money}руб")
+print(f"Сдача: {change}руб")
