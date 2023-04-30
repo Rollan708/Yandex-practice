@@ -1,0 +1,10 @@
+price_per_kg = 38
+kg_of_cherries = 2.5
+# Вычисляем общую стоимость
+total_cost = price_per_kg * kg_of_cherries
+# Получаем сумму, которую заплатил покупатель
+paid_amount = float(input())
+# Вычисляем сдачу
+change = paid_amount - total_cost
+# Выводим сумму сдачи на экран
+print(int(change))
