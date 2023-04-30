@@ -1,0 +1,6 @@
+price = float(input())
+weight = float(input())
+money = float(input())
+total_price = price * weight
+change = money - total_price
+print(int(change))
