@@ -1,0 +1,10 @@
+name = input()
+number = input()
+
+group = number[0:1]
+bed = number[1:2]
+position = number[0:1]
+
+card = f"Группа №{group}.\n{position}. {name}.\nШкафчик: {number}.\nКроватка: {bed}."
+
+print(card)
