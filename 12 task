@@ -1,0 +1,14 @@
+a = input("Введите первое число: ")
+b = input("Введите второе число: ")
+
+n = max(len(a), len(b))
+a = a.rjust(n, "0")
+b = b.rjust(n, "0")
+
+result = ""
+
+for i in range(n):
+    digit_sum = int(a[-i - 1]) + int(b[-i - 1])
+    result = str(digit_sum % 10) + result
+
+print(result)
