@@ -1,0 +1,18 @@
+speed_petya = float(input())
+speed_vasya = float(input())
+speed_tolya = float(input())
+
+distance = 43872
+
+time_petya = distance / speed_petya
+time_vasya = distance / speed_vasya
+time_tolya = distance / speed_tolya
+
+min_time = min(time_petya, time_vasya, time_tolya)
+
+if min_time == time_petya:
+    print("Петя")
+elif min_time == time_vasya:
+    print("Вася")
+else:
+    print("Толя")
