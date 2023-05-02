@@ -1,0 +1,10 @@
+current_hour = int(input())
+current_minute = int(input())
+delivery_time = int(input())
+
+total_minutes = current_hour * 60 + current_minute + delivery_time
+
+result_hour = (total_minutes // 60) % 24
+result_minute = total_minutes % 60
+
+print("{:02d}:{:02d}".format(result_hour, result_minute))
