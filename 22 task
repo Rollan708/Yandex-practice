@@ -1,0 +1,12 @@
+speed_petya = float(input())
+speed_vasya = float(input())
+
+distance = 43872
+
+time_petya = distance / speed_petya
+time_vasya = distance / speed_vasya
+
+if time_petya < time_vasya:
+    print("Петя")
+else:
+    print("Вася")
