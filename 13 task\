@@ -1,0 +1,9 @@
+n = int(input())
+m = int(input())
+
+candies = m // n
+
+candies_left = m % n
+
+print(candies)
+print(candies_left)
