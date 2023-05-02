@@ -1,0 +1,16 @@
+speed_petya = float(input())
+speed_vasya = float(input())
+speed_tolya = float(input())
+
+distance = 43872
+
+time_petya = distance / speed_petya
+time_vasya = distance / speed_vasya
+time_tolya = distance / speed_tolya
+
+results = {'Петя': time_petya, 'Вася': time_vasya, 'Толя': time_tolya}
+
+sorted_results = sorted(results.items(), key=lambda x: x[1])
+
+for i, (name, time) in enumerate(sorted_results):
+    print(f'{i + 1}. {name}')
