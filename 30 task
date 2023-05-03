@@ -1,0 +1,6 @@
+password = input()  # вводим исходный пароль
+digits = [int(d) for d in password]  # разбиваем пароль на цифры
+sum1 = digits[0] + digits[1]  # сумма цифр в двух младших разрядах
+sum2 = digits[1] + digits[2]  # сумма цифр в двух старших разрядах
+new_password = int(str(max(sum1, sum2)) + str(min(sum1, sum2)))  # формируем новый пароль
+print(new_password)  # выводим результат
