@@ -1,0 +1,9 @@
+number = input()
+a, b, c, = map(int, number)
+min_digit = min(a, b, c)
+max_digit = max(a, b, c)
+middle_diggit = a + b + c - min_digit - max_digit
+if min_digit + max_digit == middle_diggit * 2:
+    print("YES")
+else:
+    print("NO")
