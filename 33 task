@@ -1,0 +1,14 @@
+# считываем три двузначных числа из стандартного ввода
+elf_number = input()
+dwarf_number = input()
+human_number = input()
+
+# ищем общую цифру в одинаковой позиции у всех трех чисел
+for digit in elf_number:
+    if digit in dwarf_number and digit in human_number:
+        common_digit = digit
+        break
+
+# выводим общую цифру или сообщение об ошибке, если такой цифры не найдено
+if 'common_digit' in locals():
+    print(common_digit)
